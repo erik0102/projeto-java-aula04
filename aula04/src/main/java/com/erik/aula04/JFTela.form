@@ -34,9 +34,11 @@
                           <Component id="txtnome" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="btncontar" max="32767" attributes="0"/>
                           <Component id="btncalcular" max="32767" attributes="0"/>
+                          <Component id="btnint" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnloop" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
@@ -69,14 +71,20 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="txtjuros" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtjuros" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnint" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="txtatraso" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtatraso" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnloop" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="lbtotal" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="27" max="32767" attributes="0"/>
+              <EmptySpace pref="25" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -136,6 +144,22 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Total a pagar: R$ 0,00"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnint">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Int..else"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnintActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnloop">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="loop"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnloopActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
